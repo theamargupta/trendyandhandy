@@ -1,82 +1,70 @@
-<h2 align="center">
-  graphcms-commerce-starter
-</h2>
+# Getting Started with Create React App
 
-<p align="center">Build modern, SEO ready commerce storefronts with GraphCMS, Next.js, Stripe and Tailwind CSS</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## About
+## Available Scripts
 
-This project is an example of how to build fully-functioning Next.js commerce storefront with GraphCMS and Stripe. View the demo on [https://commerce.withheadlesscms.com/](https://commerce.withheadlesscms.com/).
+In the project directory, you can run:
 
-## Features
+### `yarn start`
 
-- Fully localized product catalogue built with [GraphCMS localization](https://graphcms.com/content-localization) and [Next.js](https://nextjs.org/docs/advanced-features/i18n-routing).
-- Pre-rendered catalogue pages via [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) and [`getStaticPaths`](https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation).
-- Dynamic client-side data fetching via [SWR](https://swr.vercel.app).
-- Localized shopping cart with [`react-use-cart`](https://github.com/notrab/react-use-cart).
-- Hosted checkout and payment flow with [Stripe Checkout](https://stripe.com/docs/payments/checkout).
-- Use the [GraphCMS mutation API](https://graphcms.com/mutation-api) with [API Routes](https://nextjs.org/docs/api-routes/introduction) to create orders on successful checkout (via webhook).
-- Multiple currency support.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Usage
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-> This reference application requires a Stripe account
+### `yarn test`
 
-1. Clone the repository with [`degit`](https://github.com/Rich-Harris/degit) and install project dependencies.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```bash
-npx degit GraphCMS/graphcms-commerce-starter#main graphcms-commerce-starter
-cd graphcms-commerce-starter
-yarn
-```
+### `yarn build`
 
-2. Create a new GraphCMS project using the `Commerce Starter` template.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-3. Add a `.env` file by cloning `.env.sample` and providing the required variable values.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-> It is recommended you create separate GraphCMS [auth tokens](https://graphcms.com/docs/authorization#permanent-auth-tokens) to handle querying and mutating data.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-GRAPHCMS_MUTATION_TOKEN=
-NEXT_PUBLIC_GRAPHCMS_TOKEN=
-NEXT_PUBLIC_GRAPHCMS_URL=
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-STRIPE_SECRET_KEY=
-```
+### `yarn eject`
 
-4. Setup a [Stripe webhook](https://stripe.com/docs/payments/handling-payment-events) for the `checkout.session.completed` event to order to enable GraphCMS fulfilment via the mutation API.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-5. Configure support for more locales or currencies in [`graphcms.config.js`](graphcms.config.js) if required. Learn more [here](#configuration).
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-6. Run `yarn dev`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Configuration
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Project configuration for supported locales and currencies is managed in [`graphcms.config.js`](graphcms.config.js).
+## Learn More
 
-> It is important that the `locales` array reflects the enabled locales in your GraphCMS project.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```js
-module.exports = {
-  locales: [
-    {
-      value: 'en',
-      label: 'English',
-      default: true
-    },
-    {
-      value: 'de',
-      label: 'German'
-    }
-  ],
-  currencies: [
-    {
-      code: 'GBP',
-      default: true
-    },
-    {
-      code: 'EUR'
-    }
-  ]
-}
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
