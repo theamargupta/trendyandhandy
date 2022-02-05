@@ -171,11 +171,28 @@ module.exports = {
         "-6": "-6",
         "-12": "-12",
       },
-      backgroundColor: {
+      colors: {
         primary: "#89bdf9",
+        secondary: "#f14a95",
+        lightSecondary: "#FCD0D1",
         light: "#f5f5f5",
         "light-200": "#f0f0f0",
         "light-300": "#e8e8e8",
+        "light-400": "#e9e9e9",
+      },
+      backgroundColor: {
+        primary: "#89bdf9",
+        secondary: "#f14a95",
+        lightSecondary: "#FCD0D1",
+        light: "#f5f5f5",
+        "light-200": "#f0f0f0",
+        "light-300": "#e8e8e8",
+        "light-400": "#e9e9e9",
+      },
+      text: {
+        color: {
+          secondary: "#f14a95",
+        },
       },
       lineHeight: {
         large: "54px",

@@ -9,7 +9,7 @@ export default function Layout({ children, categories }) {
     categories = categories.slice(0, navItemLength)
   }
   return (
-    <div>
+    <div >
       <nav>
         <div className="flex justify-center">
           <div
@@ -28,12 +28,12 @@ export default function Layout({ children, categories }) {
           </div>
         </div>
       </nav>
-      <nav className="sticky top-0 z-50">
+      <nav className="sticky top-0 z-50 mb-8">
         <div className="flex justify-center">
           <div
             className="
-            mobile:px-12 sm:flex-row sm:pt-6 sm:pb-6 desktop:px-0
-            px-4 pt-8 flex flex-col w-fw bg-white
+            mobile:px-12 sm:flex-row sm:pt-2 sm:pb-2 desktop:px-0
+            px-4 pt-2 flex flex-col w-fw bg-secondary 
           "
           >
             <div className="flex flex-wrap mt-1">
@@ -42,7 +42,7 @@ export default function Layout({ children, categories }) {
                   <p
                     className="
                     sm:mr-8 sm:mb-0
-                    mb-4 text-left text-smaller mr-4
+                    mb-4 text-left text-smaller mr-4 text-white
                   "
                   >
                     Home
@@ -55,7 +55,7 @@ export default function Layout({ children, categories }) {
                     <p
                       className="
                           sm:mr-8 sm:mb-0
-                          mb-4 text-left text-smaller mr-4
+                          mb-4 text-left text-smaller mr-4 text-white
                         "
                     >
                       {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -68,7 +68,7 @@ export default function Layout({ children, categories }) {
                   <p
                     className="
                     sm:mr-8 sm:mb-0
-                    mb-4 text-left text-smaller mr-4 
+                    mb-4 text-left text-smaller mr-4 text-white
                   "
                   >
                     All
@@ -76,6 +76,17 @@ export default function Layout({ children, categories }) {
                 </a>
               </Link>
             </div>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <div
+            // mobile:px-12 sm:flex-row sm:pt-2 sm:pb-2 desktop:px-0
+            className="
+            px-4 pt-2 py-1 flex flex-row w-fw bg-light-400 justify-around
+          "
+          >
+            <p className="hidden sm:flex text-sm">Extra 5% Discount Use Code : WC5</p>
+            <p className="text-sm">Free Shipping on Order Above ₹499</p>
           </div>
         </div>
       </nav>

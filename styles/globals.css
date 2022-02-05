@@ -8,7 +8,6 @@
   src: url("/fonts/Eina.otf");
 }
 
-
 @font-face {
   font-family: "Eina Light";
   src: url("/fonts/Eina-Light.otf");
@@ -20,12 +19,55 @@
 }
 
 @layer base {
-  p, h1, h2, h3, h4, h5 {
-    color: rgba(0, 0, 0, .8);
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: rgba(0, 0, 0, 0.8);
     font-family: Eina;
   }
 }
 
 .Toastify__progress-bar--default {
   background: #89bdf9 !important;
+}
+.swiper {
+  max-width: 100vw;
+  max-height: 65vh;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 90% !important;
 }
