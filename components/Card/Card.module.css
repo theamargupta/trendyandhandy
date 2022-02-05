@@ -1,9 +1,9 @@
 .wrapper {
-  @apply bg-white hover:bg-light shadow-xl m-4 hover:shadow-none marker:cursor-pointer w-80 rounded-3xl flex flex-col items-center justify-center;
+  @apply bg-white hover:bg-light shadow-xl m-4 hover:shadow-none cursor-pointer w-80 rounded-3xl flex flex-col items-center justify-center;
 }
 
 .wrapperAnime {
-  @apply transition-all duration-500 ease-in-out;
+  @apply transition-all duration-700 ease-in-out;
 }
 
 .header {
