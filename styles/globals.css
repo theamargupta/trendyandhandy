@@ -34,8 +34,9 @@
   background: #89bdf9 !important;
 }
 .swiper {
-  max-width: 100vw;
+  max-width: 95vw;
   max-height: 65vh;
+  border-radius: 10px;
 }
 .swiper-slide {
   text-align: center;
@@ -70,4 +71,10 @@
 .swiper-button-next,
 .swiper-button-prev {
   top: 90% !important;
+}
+@media (max-width: 600px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    display: none;
+  }
 }
