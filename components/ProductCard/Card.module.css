@@ -1,5 +1,5 @@
 .wrapper {
-  @apply bg-white hover:bg-light shadow-xl m-4 sm:m-2 hover:shadow-none cursor-pointer sm:w-56 md:w-60 lg:w-68 xl:w-80 rounded-3xl flex flex-col items-center justify-center;
+  @apply bg-white hover:bg-light shadow-xl m-2 sm:m-4 hover:shadow-none cursor-pointer w-38 sm:w-72 rounded-3xl flex flex-col items-center justify-center;
 }
 
 .wrapperAnime {
@@ -11,7 +11,7 @@
 }
 
 .imageWrapper {
-  @apply h-40 sm:h-56 rounded-2xl overflow-hidden;
+  @apply h-36 sm:h-56 rounded-2xl overflow-hidden;
 }
 
 .image {

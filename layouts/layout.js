@@ -15,7 +15,7 @@ export default function Layout({ children, categories }) {
           <div
             className="
             mobile:px-12 sm:flex-row sm:pt-10 sm:pb-2 desktop:px-0
-            px-2 pt-2 flex flex-col w-fw
+            px-2 pt-2 flex flex-col sm:w-fw 
           "
           >
             <div className="mb-2 sm:mr-16 max-w-48 sm:max-w-none">
@@ -31,9 +31,9 @@ export default function Layout({ children, categories }) {
       <nav className="sticky top-0 z-50 mb-8">
         <div className="flex justify-center">
           <div
-            className="
+            className="hidden sm:flex
             mobile:px-12 sm:flex-row sm:pt-2 sm:pb-2 desktop:px-0
-            px-4 pt-2 flex flex-col w-fw bg-secondary 
+            px-4 pt-2 flex-col w-fw bg-secondary 
           "
           >
             <div className="flex flex-wrap mt-1">
