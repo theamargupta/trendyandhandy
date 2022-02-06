@@ -38,6 +38,16 @@ const Home = ({ inventoryData = [], categories: categoryData = [] }) => {
           collSubTitle={"Find the perfect piece or accessory to Gift."}
           collProducts={collProducts}
         />
+        <ProductCollection
+          collTitle={"Best Seller From Giftastic"}
+          // collSubTitle={"Find the perfect piece or accessory to Gift."}
+          collProducts={collProducts}
+        />
+        <ProductCollection
+          collTitle={"Collection list"}
+          collSubTitle={"Find the perfect piece or accessory to Gift."}
+          collProducts={collProducts}
+        />
       </div>
     </>
   )
