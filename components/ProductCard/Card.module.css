@@ -1,5 +1,5 @@
 .wrapper {
-  @apply bg-white hover:bg-light shadow-xl m-4 hover:shadow-none cursor-pointer w-80 rounded-3xl flex flex-col items-center justify-center;
+  @apply bg-white hover:bg-light shadow-xl m-4 hover:shadow-none cursor-pointer sm:w-56 md:w-60 lg:w-68 xl:w-80 rounded-3xl flex flex-col items-center justify-center;
 }
 
 .wrapperAnime {
@@ -23,7 +23,7 @@
 }
 
 .text {
-  @apply text-center font-normal  text-xl tracking-wider text-black mb-2;
+  @apply text-center font-normal text-sm tracking-wider  mb-2;
 }
 .price {
   @apply text-center font-medium leading-none tracking-wider text-primary text-xl;

@@ -32,7 +32,7 @@ const BasicCard = ({ title, likes, order, image, price, mrp }) => {
       <div className={styles.textWrapper}>
         <h1 className={styles.text}>{title}</h1>
         <h1 className={styles.price}>
-          ₹{price} <span className={classNames([styles.mrp])}>{mrp}</span>
+          ₹{price} <span className={classNames([styles.mrp])}>₹{mrp}</span>
         </h1>
       </div>
     </div>
