@@ -24,3 +24,4 @@ The Toys and Stationary E-commerce Website is deployed and hosted on Vercel. You
 
 ## Conclusion
 The Toys and Stationary E-commerce Website project demonstrates the implementation of an eco-friendly online shopping platform using Next.js and React. With features like product catalog, cart management, user authentication, and payment integration, the website offers a seamless shopping experience for users. The integration of libraries like React Icons, React Toastify, Swiper, and Tailwind CSS enhances the user interface and adds interactive elements.
+   ![Home.img](https://i.ibb.co/6mXSWpN/trendyandhandy.jpg)
